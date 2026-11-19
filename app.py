@@ -494,7 +494,6 @@ with st.sidebar:
             st.session_state.logged_in = False
             st.session_state.user_email = ""
             st.session_state.user_id = None
-            st.session_state.page = "홈"
             st.rerun()
     st.markdown("<div class='small-muted'>당신의 생각이 더 좋은 글이 되는 곳.</div>", unsafe_allow_html=True)
 
