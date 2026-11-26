@@ -527,33 +527,6 @@ if page == "홈":
     with c:
         st.markdown('<div class="stat-card"><div class="stat-label">오늘의 글쓰기</div><div class="stat-value">한 걸음씩</div></div>', unsafe_allow_html=True)
 
-    st.write("")
-    st.markdown('<div class="section-title">무엇을 시작해 볼까요?</div>', unsafe_allow_html=True)
-    x, y = st.columns(2)
-    with x:
-        with st.container(border=True):
-            st.markdown("### 🧭 글쓰기 지원")
-            st.write("주요 내용만 입력하면 글의 구성과 문단별 작성 방향을 제안합니다.")
-            if st.button("글의 방향 설계하기 →", key="home_support", use_container_width=True):
-                st.session_state.page = "글쓰기 지원"
-                st.rerun()
-    with y:
-        with st.container(border=True):
-            st.markdown("### ✨ 글쓰기 코칭")
-            st.write("직접 작성한 글을 분석하고 부족한 부분과 수정 예시를 안내합니다.")
-            if st.button("내 글 첨삭받기 →", key="home_coach", use_container_width=True):
-                st.session_state.page = "글쓰기 코칭"
-                st.rerun()
-
-    st.write("")
-    with st.container(border=True):
-        st.markdown("### 나만의 문체를 학습시켜 보세요")
-        st.write("내가 쓴 글을 분석해 두면 다음 글쓰기 지원과 첨삭에 문체 특징을 반영할 수 있습니다.")
-        if st.button("내 문체 분석하기", key="home_style"):
-            st.session_state.page = "내 문체"
-            st.rerun()
-
-
 # ---------------------------------------------------------
 # 글쓰기 지원
 # ---------------------------------------------------------
